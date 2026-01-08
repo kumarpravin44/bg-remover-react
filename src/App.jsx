@@ -55,7 +55,7 @@ export default function App({ mode, setMode }) {
       const res = await fetch("https://api.remove.bg/v1.0/removebg", {
         method: "POST",
         headers: {
-          "X-Api-Key": 'FrGfCKhzjmN2xzYWWS9eDUgz',
+          "X-Api-Key": import.meta.env.VITE_REMOVE_BG_KEY,
         },
         body: formData,
       });
